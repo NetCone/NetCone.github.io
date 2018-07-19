@@ -165,9 +165,15 @@ function myMap()
 {
   myCenter=new google.maps.LatLng(41.878114, -87.629798);
   var mapOptions= {
-    center:myCenter,
-    zoom:12,scrollwheel:false,draggable:true,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
+    center: myCenter,
+    zoom:12,
+    panControl: true,
+    zoomControl: true,
+    mapTypeControl: true,
+    scaleControl: true,
+    streetViewControl: true,
+    overviewMapControl: true,
+    rotateControl: true   
   };
   var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
 
